@@ -23,7 +23,6 @@ class Program
         }
         lists = [];
         lists.AddRange(arr.Where(interval => interval[0] != -1));
-
         return lists.ToArray();
     }
 
