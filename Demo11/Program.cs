@@ -2,6 +2,44 @@
 
 class Program
 {
+    public int MaxAreaNew(int[] height)
+    {
+        int[] a = [0,0];
+        int left = 0, right = height.Length - 1;
+        int n = height.Length;
+        int res = 0;
+        while (left<right)
+        {
+            if (height[left] < a[0])
+            {
+                left++;
+                continue;
+            }
+
+            if (height[right] < a[1])
+            {
+                right--;
+                continue;
+            }
+
+            a[0] = height[left];
+            a[1] = height[right];
+
+            res = Math.Max(res, Math.Min(a[0], a[1]) * (right - left + 1));
+
+            if (a[0] > a[1])
+            {
+                right--;
+            }
+            else
+            {
+                left++;
+            }
+        }
+
+        return res;
+    }
+    
     public int MaxArea(int[] height)
     {
         int ret=0;

@@ -29,6 +29,11 @@ class Program
         return max;
     }
 
+    public int LengthOfLongestSubstringNew(string s)
+    {
+        
+    }
+
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");

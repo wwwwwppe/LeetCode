@@ -28,7 +28,7 @@ public class MyLinkedList
     
     public int Get(int index)
     {
-        
+        return 0;
     }
     
     public void AddAtHead(int val) {

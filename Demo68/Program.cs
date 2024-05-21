@@ -61,6 +61,77 @@ class Program
         return list;
     }
 
+    // 一遍AC
+    public static IList<string> FullJustifyOne(string[] words, int maxWidth)
+    {
+        var lists = new List<string>();
+        int left = 0, right = 0;
+        while (left < words.Length)
+        { 
+            int temp = 0;
+            while (right < words.Length)
+            {
+                temp += words[right].Length;
+                if (temp + right - left > maxWidth)
+                {
+                    string a = "";
+                    temp -= words[right].Length;
+                    int cha = maxWidth - temp;
+                    right -= 1;
+                    int tep = right - left == 0 ? 1 : right - left;
+                    int cheng = cha / tep;
+                    int ge = cha % tep;
+                    for (int i = left; i <= right; i++)
+                    {
+                        a += words[i];
+                        if (tep > 0)
+                        {
+                            for (int j = 0; j < cheng; j++)
+                            {
+                                a += " ";
+                            }
+
+                            if (ge > 0)
+                            {
+                                a += " ";
+                                ge--;
+                            }
+
+                            tep--;
+                        }
+                    }
+
+                    right++;
+                    left = right;
+                    lists.Add(a);
+                    break;
+                }
+                else if (right == words.Length - 1)
+                {
+                    string b = "";
+                    for (int i = left; i <= right; i++)
+                    {
+                        b += words[i];
+                        if (b.Length < maxWidth)
+                        {
+                            b += " ";
+                        }
+                    }
+
+                    for (int i = b.Length; i < maxWidth; i++)
+                    {
+                        b += " ";
+                    }
+                    lists.Add(b);
+                    return lists;
+                }
+                right++;
+            }
+        }
+
+        return lists;
+    }
+
     public static IList<string> FullJustifyTwo(string[] words, int maxWidth)
     {
         string val = "";
@@ -92,6 +163,8 @@ class Program
             {
             }
         }
+
+        return [];
     }
 
     static void Main(string[] args)
