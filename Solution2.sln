@@ -295,6 +295,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo30", "Demo30\Demo30.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo39", "Demo39\Demo39.csproj", "{BDCAE41F-4BC6-4F9E-B379-25B45F3E772D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo3040", "Demo3040\Demo3040.csproj", "{E3D0B342-36F4-4D93-BDE1-D520EB5B722F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -889,5 +891,9 @@ Global
 		{BDCAE41F-4BC6-4F9E-B379-25B45F3E772D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDCAE41F-4BC6-4F9E-B379-25B45F3E772D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDCAE41F-4BC6-4F9E-B379-25B45F3E772D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D0B342-36F4-4D93-BDE1-D520EB5B722F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D0B342-36F4-4D93-BDE1-D520EB5B722F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D0B342-36F4-4D93-BDE1-D520EB5B722F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D0B342-36F4-4D93-BDE1-D520EB5B722F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
