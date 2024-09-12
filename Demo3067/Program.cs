@@ -1,10 +1,9 @@
-﻿namespace Demo2831;
+﻿namespace Demo3067;
 
 class Program
 {
-    public int LongestEqualSubarray(IList<int> nums, int k)
-    {
-        return 0;
+    public int[] CountPairsOfConnectableServers(int[][] edges, int signalSpeed) {
+        
     }
     
     static void Main(string[] args)

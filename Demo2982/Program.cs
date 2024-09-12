@@ -1,10 +1,9 @@
-﻿namespace Demo2831;
+﻿namespace Demo2982;
 
 class Program
 {
-    public int LongestEqualSubarray(IList<int> nums, int k)
-    {
-        return 0;
+    public int MaximumLength(string s) {
+        
     }
     
     static void Main(string[] args)

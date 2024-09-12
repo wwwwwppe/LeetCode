@@ -1,8 +1,8 @@
-﻿namespace Demo2831;
+﻿namespace Demo2844;
 
 class Program
 {
-    public int LongestEqualSubarray(IList<int> nums, int k)
+    public int MinimumOperations(string num)
     {
         return 0;
     }
