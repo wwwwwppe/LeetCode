@@ -6,7 +6,8 @@ class Program
     {
         Array.sort(bases);
         Array.sort(passengers);
-        for (int i = 0, j = 0; i < buses.Count(); i++)
+        var j = 0;
+        for (int i = 0; i < buses.Count(); i++)
         {
             int maxJ = j + capacity;
             if (maxJ > passengers.Count() - 1)
@@ -17,6 +18,7 @@ class Program
                     break;
             }
         }
+        return Math.Min(buses[^1], findLast(j, passengers));
     }
 
     private int findLast(int val, int[] ints)
