@@ -2,7 +2,7 @@
 
 class Program
 {
-    public long MaximumSubsequenceCount(string text, string pattern)
+    public long MaximumSubsequenceCountOri(string text, string pattern)
     {
         int a = text.IndexOf(pattern[0]);
         int b = text.LastIndexOf(pattern[1]);
@@ -79,9 +79,26 @@ class Program
 
         return Math.Max(ret1, ret2);
     }
+    
+    public long MaximumSubsequenceCount(string text, string pattern) {
+        long res = 0, cnt1 = 0, cnt2 = 0;
+        foreach (char c in text) {
+            if (c == pattern[1]) {
+                res += cnt1;
+                cnt2++;
+            }
+            if (c == pattern[0]) {
+                cnt1++;
+            }
+        }
+        return res + Math.Max(cnt1, cnt2);
+    }
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Program program = new Program();
+        string text = "iuvgbmteyivbfwuospxmmgzagfa";
+        string p = "ti";
+        program.MaximumSubsequenceCount(text, p);
     }
 }
