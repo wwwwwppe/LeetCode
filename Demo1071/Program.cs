@@ -2,7 +2,15 @@
 
 class Program
 {
-    if(demo != null){
+    public string GcdOfStrings(string str1, string str2) {
+        string str = "";
+        for (int i = 0; i < str1.Length; i++)
+        {
+            if(str1[i] == str){
+              
+            }
+        }
+
     }
 
     static void Main(string[] args)
