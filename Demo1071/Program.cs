@@ -4,14 +4,16 @@ class Program
 {
     public string GcdOfStrings(string str1, string str2) {
         string str = "";
-        for (int i = 0; i < str1.Length; i++)
+        int minLength = Math.max(str1.Length,str2.Length);
+        for (int i = 1; i < minLength; i++)
         {
-            if(str1[i] == str){
-              
-            }
+             string strDemo = str + str1[i];
+             if()
         }
-
+        return str;
     }
+
+    private boolean 
 
     static void Main(string[] args)
     {
