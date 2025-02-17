@@ -8,11 +8,9 @@ class Program
     {
         if (head == null)
         {
-            
+          return null;            
         }
-
         return new ListNode();
-
     }
 
     static void Main(string[] args)
@@ -20,3 +18,4 @@ class Program
         Console.WriteLine("Hello, World!");
     }
 }
+
