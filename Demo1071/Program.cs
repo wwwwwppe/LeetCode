@@ -3,17 +3,12 @@
 class Program
 {
     public string GcdOfStrings(string str1, string str2) {
-        string str = "";
-        int minLength = Math.max(str1.Length,str2.Length);
-        for (int i = 1; i < minLength; i++)
-        {
-             string strDemo = str + str1[i];
-             if()
-        }
-        return str;
+        if (str1 + str2 != str2 + str1) return "";
+        int gcdLength = Gcd(str1.Length, str2.Length);
+        return str1[..gcdLength];
     }
 
-    private boolean 
+    int Gcd(int a, int b) => b == 0 ? a : Gcd(b, a % b);
 
     static void Main(string[] args)
     {
